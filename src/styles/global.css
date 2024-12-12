@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl mt-8 mb-8;
+  }
+  h2 {
+    @apply text-3xl mt-8 mb-8;
+  }
+  h3 {
+    @apply text-2xl mt-8 mb-8;
+  }
+  h4 {
+    @apply text-xl mt-8 mb-8;
+  }
+  h5 {
+    @apply text-lg mt-8 mb-8;
+  }
+  h6 {
+    @apply text-base mt-8 mb-8;
+  }
+  ul li {
+    @apply pl-5;
+  }
+  blockquote {
+    @apply mt-5 mb-5;
+  }
+}

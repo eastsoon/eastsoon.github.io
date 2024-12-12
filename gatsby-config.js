@@ -9,12 +9,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `EastSoon dev blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jeong Dongsoon`,
+      summary: `개발자가 개발한 개발 블로그`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `개발하면서 남기는 낙서장 또는 블로그`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `kylemathews`,
@@ -118,7 +118,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/dev-note.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
