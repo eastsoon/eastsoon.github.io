@@ -17,7 +17,8 @@ module.exports = {
     description: `개발하면서 남기는 낙서장 또는 블로그`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: `eastsoon`,
+      instagram: `corporsoon`,
     },
   },
   plugins: [
