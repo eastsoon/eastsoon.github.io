@@ -18,12 +18,12 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
+        <header className="mb-8">
           <div className="flex">
             <div className="border-l-4 mr-3"></div>
             <p className="text-gray-400">{post.frontmatter.date}</p>
           </div>
-          <h1 className="mt-10 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+          <h1 className="mt-10 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
             {post.frontmatter.title}
           </h1>
         </header>
