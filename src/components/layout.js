@@ -6,29 +6,33 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
-  if (isRootPath) {
-    header = (
-      <h1 className="text-5xl">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="text-5xl" to="/">
-        {title}
-      </Link>
-    )
-  }
+  // if (isRootPath) {
+  //   header = (
+  //     <Link className="text-5xl" to="/">
+  //       {title}
+  //     </Link>
+  //   )
+  // } else {
+  header = (
+    <header className="bg-white border-b border-gray-300 shadow-sm">
+      <nav className="flex justify-between mx-auto max-w-4xl py-6 px-8 sm:px-1">
+        <div className="flex sm:flex-1">
+          <Link className="sm:text-sm xl:text-4xl" to="/">
+            {title}
+          </Link>
+        </div>
+        <div className="flex w-32 justify-evenly">
+          <span className="sm:text-xs xl:text-base">Tech</span>
+          <span className="sm:text-xs xl:text-base">Diary</span>
+        </div>
+      </nav>
+    </header>
+  )
+  // }
 
   return (
     <>
-      <div className="flex justify-between pl-10 pr-10">
-        <header className="">{header}</header>
-        <div className="flex">
-          <span>Tech</span>
-          <span>Diary</span>
-        </div>
-      </div>
+      {header}
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main>{children}</main>
         <footer>
